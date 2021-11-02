@@ -2508,6 +2508,59 @@ input, select, textarea {
 				}
 
 /* Image */
+.imageh {
+	border-radius: 4px;
+	border: 0;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+}
+
+	.imageh:before {
+		content: '';
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+	}
+
+	.imageh img {
+		border-radius: 4px;
+		display: block;
+	}
+
+	.imageh.left {
+		float: left;
+		margin: 0 1.5em 1em 0;
+		top: 0.25em;
+	}
+
+	.imageh.right {
+		float: right;
+		margin: 0 0 1em 1.5em;
+		top: 0.25em;
+	}
+
+	.imageh.left, .imageh.right {
+		max-width: 40%;
+	}
+
+		.imageh.left img, .imageh.right img {
+			width: 100%;
+		}
+
+	.imageh.fit {
+		display: block;
+		margin: 0 0 2em 0;
+		width: 100%;
+	}
+
+		.imageh.fit img {
+			width: 100%;
+		}
 
 	.image {
 		border-radius: 4px;
