@@ -56,6 +56,7 @@ html {
   color: rgba(0, 0, 0, 0.6) !important;
 }
 
+
 /* Hero (intro) section */
 .intro-title {
   font-weight: 800;
@@ -269,3 +270,18 @@ footer a:not(.nav-link) {
 .entry-title a {
   text-decoration: none;
 }
+
+.my {
+  -moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+  -webkit-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+  -ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+  transition: border-bottom-color 0.2s ease, color 0.2s ease;
+  text-decoration: none;
+  color: #01635F;
+  /* border-bottom: dotted 1px rgba(88, 88, 88, 0.5); */
+}
+
+.my:hover {
+  /* border-bottom: dotted 1px rgba(88, 88, 88, 0.5); */
+  color: #61b1ad !important;
+  }
