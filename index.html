@@ -18,6 +18,11 @@
     <link href="./css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
     <link href="./css/aos.css?ver=1.2.0" rel="stylesheet">
     <link href="./css/main.css?ver=1.2.0" rel="stylesheet">
+    <style>
+      .hero-ill{max-width:460px;width:100%;height:auto}
+      @media (max-width: 991.98px){.hero-ill{max-width:min(320px,55vw);margin-top:8px}}
+      img.avatar{width:100%;max-width:400px;height:auto}
+    </style>
     <noscript>
       <style type="text/css">
         [data-aos] {
@@ -53,7 +58,7 @@
   <div class="cover bg-light">
     <div class="container px-3">
       <div class="row">
-        <div class="col-lg-6 p-2" data-aos="fade-right" data-aos-delay="50"><img class="img-fluid" src="images/illustrations/phone.png" alt="hello"/></div>
+        <div class="col-lg-6 p-2 text-center" data-aos="fade-right" data-aos-delay="50"><img class="img-fluid hero-ill" src="images/illustrations/phone.png" alt="hello"/></div>
         <div class="col-lg-6">
           <div class="mt-5">
             <p class="lead text-uppercase mb-1">Welcome!</p>
@@ -97,7 +102,8 @@
           <li class="mb-1"><span class="fw-bolder">2026</span> — <i>Translating the Untranslatable</i> accepted to Findings of EMNLP 2026.</li>
         </ul>
       </div>
-      <div class="col-md-4 offset-md-2" data-aos="fade-left" data-aos-delay="100"><img class="avatar img-fluid mt-2" src="images/hirona_bike.jpg" width="360" height="450" alt="Hirona on a road bike in the Malibu hills" style="max-width:360px;width:100%"/></div>
+      <div class="col-md-5 offset-md-1" data-aos="fade-left" data-aos-delay="100"><img class="avatar img-fluid mt-2" id="avatar" src="images/orangeavatar.jpg" width="400" height="400" alt="Hirona"/>
+        <script>(function(){var pics=[["images/orangeavatar.jpg","Hirona"],["images/hirona_bike.jpg","Hirona on a road bike in the Malibu hills"]];var p=pics[Math.floor(Math.random()*pics.length)];var el=document.getElementById("avatar");el.src=p[0];el.alt=p[1];})();</script></div>
     </div>
   </div>
 </div>
